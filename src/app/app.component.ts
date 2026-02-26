@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, RouterLink], // ¡Imprescindible para la navegación!
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practica-rutas';
+  title = 'mi-proyecto-rutas';
 }
